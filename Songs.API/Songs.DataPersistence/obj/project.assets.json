@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Songs.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Songs.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Songs.Common.dll": {}
+        }
+      },
+      "Songs.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Songs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Songs.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Songs.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Songs.Common/1.0.0": {
+      "type": "project",
+      "path": "../Songs.Common/Songs.Common.csproj",
+      "msbuildProject": "../Songs.Common/Songs.Common.csproj"
+    },
+    "Songs.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Songs.Interfaces/Songs.Interfaces.csproj",
+      "msbuildProject": "../Songs.Interfaces/Songs.Interfaces.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Songs.Common >= 1.0.0",
+      "Songs.Interfaces >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\daria.turcu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.DataPersistence\\Songs.DataPersistence.csproj",
+      "projectName": "Songs.DataPersistence",
+      "projectPath": "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.DataPersistence\\Songs.DataPersistence.csproj",
+      "packagesPath": "C:\\Users\\daria.turcu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.DataPersistence\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\daria.turcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.Common\\Songs.Common.csproj": {
+              "projectPath": "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.Common\\Songs.Common.csproj"
+            },
+            "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.Interfaces\\Songs.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\daria.turcu\\Documents\\sourceControl\\Songs.API\\Songs.Interfaces\\Songs.Interfaces.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

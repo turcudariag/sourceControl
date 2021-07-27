@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Songs.API</name>
+    </assembly>
+    <members>
+        <member name="T:Songs.API.Controllers.LoginController">
+            <summary>
+            Authenticate users
+            </summary>
+        </member>
+        <member name="M:Songs.API.Controllers.LoginController.Login(Songs.API.Models.AuthenticateRequest)">
+            <summary>
+            Authenticate the user.
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Songs.API.Controllers.SongsController.Get(System.Guid)">
+            <summary>
+            Get the song with the given id.
+            </summary>
+            <param name="id"></param>
+            <returns>Returns the song with the given id</returns>
+        </member>
+        <member name="M:Songs.API.Controllers.SongsController.Get(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Get all songs.
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <returns>Returns the list of all songs </returns>
+        </member>
+        <member name="M:Songs.API.Controllers.SongsController.Add(Songs.API.SongModel)">
+            <summary>
+            Add a new song.
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Songs.API.Controllers.SongsController.Update(System.Guid,Songs.API.SongModel)">
+            <summary>
+            Update an existing song.
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Songs.API.Controllers.SongsController.Delete(System.Guid)">
+            <summary>
+            Delete an existing song.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
