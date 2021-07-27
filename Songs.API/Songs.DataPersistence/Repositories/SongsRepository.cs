@@ -53,7 +53,7 @@ namespace Songs.DataPersistence.Repositories
         //new featureq
         public Song GetByTitle(string tilte)
         {
-            throw new NotImplementedException();
+            return _songs.FirstOrDefault(x => x.Title == tilte);
         }
 
         /// <summary>
