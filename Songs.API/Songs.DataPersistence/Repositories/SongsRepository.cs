@@ -50,10 +50,10 @@ namespace Songs.DataPersistence.Repositories
             return _songs.FirstOrDefault(x=>x.Id == id);
         }
 
-        //new featureq
-        public Song GetByTitle(string tilte)
+        //new feature
+        public Song GetByTitle(string title)
         {
-            return _songs.FirstOrDefault(x => x.Title == tilte);
+            return _songs.FirstOrDefault(x => x.Title == title);
         }
 
         /// <summary>
